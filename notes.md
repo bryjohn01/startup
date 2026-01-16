@@ -97,3 +97,6 @@ Handling the toggling of the checkboxes was particularly interesting.
   ))}
 </div>
 ```
+## Notes on Git 
+- Make frequent commits to have code backed up and provide a working history on the project
+- Become familiar with using Git within the development environment (VSCode in this case)

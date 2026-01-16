@@ -1,8 +1,8 @@
-# Your startup name here
+# BakeOff Board
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+BakeOff Board is a simple social web app for home cooks and bakers to log what they make, rate recipes, and share results with others. Users can post photos of their finished bakes, leave notes about what worked (or didn’t), and see a live feed of what the community is cooking in real time.
 
 > [!NOTE]
 > This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
@@ -17,45 +17,56 @@ A brief description of the application here. Lorem ipsum dolor sit amet, consect
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [X] Proper use of Markdown
+- [X] A concise and compelling elevator pitch
+- [X] Description of key features
+- [X] Description of how you will use each technology
+- [X] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+BakeOff Board is a lightweight social log for home cooks and bakers. Users can save recipes they try, upload photos of finished dishes, rate them, and write notes for next time. A live community feed shows what others are baking in real time, making it easy to discover new ideas and stay inspired.
 
 ### Design
 
-![Design image](placeholder.png)
+![Login page](/bakeoffboard_login.jpg)
+![Feed page](/bakeoffboard_feed.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The application begins with a login/register screen. After authentication, users are taken to a main feed showing recent bakes posted by other users. Each bake appears as a card containing a photo, recipe name, rating, notes, and timestamp. Navigation links allow users to add a new bake, view their personal cookbook, or view their profile.
 
 ```mermaid
 sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
+    actor User
+    participant Frontend
+    participant Backend
+    User->>Frontend: Submit login credentials
+    Frontend->>Backend: POST /login
+    Backend-->>Frontend: Authenticated session
+    User->>Frontend: Submit new bake
+    Frontend->>Backend: POST /bakes
+    Backend-->>Frontend: Save bake to DB
+    Backend-->>Frontend: Broadcast bake via WebSocket
 ```
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- User registration, login, and logout
+- Add and log baked dishes with photos, ratings, and notes
+- Personal cookbook showing previously tried recipes
+- Community feed displaying recent bakes
+- Live updates when new bakes are posted
+- Optional recipe lookup using a third-party API
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Semantic HTML elements will structure the application, including forms for login and bake submission, navigation bars, and accessible content layout.
+- **CSS** - CSS will be used for responsive layout, card-based design for bakes, consistent color themes, and simple animations such as hover effects and new-post highlights.
+- **React** - The frontend will be built as a single-page application using React. Components will represent views such as login, feed, add-bake form, and cookbook. React Router will control navigation, and state will update dynamically based on user actions.
+- **Service** - A Node.js/Express backend will provide endpoints for authentication, posting and retrieving bakes, and fetching user data. The service will also call a third-party recipe API (such as TheMealDB) to assist users in adding recipe details.
+- **DB/Login** - MongoDB will store user credentials (securely hashed), recipes, and bake logs. Only authenticated users will be able to create or view personalized data.
+- **WebSocket** - WebSockets will broadcast new bake events to all connected clients so the feed updates in real time when someone posts a new bake.
 
 ## 🚀 AWS deliverable
 
