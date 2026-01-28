@@ -78,15 +78,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [X] **HTML pages** - Created multiple HTML pages to represent the main components of the application, including `index.html` (login/landing), `feed.html` (community feed), `add_recipe.html` (add a bake), and `cookbook.html` (user cookbook).
+- [X] **Proper HTML element usage** - Used HTML elements like `header`, `nav`, `main`, `section`, `article`, `footer`, `form`, `label`, `input`, `table`, and `img` to structure the application.
+- [X] **Links** - Added navigation links between all pages using a shared navigation bar so users can move between the home page, feed, add bake page, and cookbook.
+- [X] **Text** - Included descriptive textual content throughout the application, like headings, labels, notes, placeholders, and text describing application features.
+- [X] **3rd party API placeholder** - Added a clearly labeled placeholder section on the Add Bake page indicating where results from a third-party recipe API will be displayed.
+- [X] **Images** - Included image elements on the feed and landing pages using locally stored placeholder images to represent baked goods. Also added a favicon.
+- [X] **Login placeholder** - Added a login form with email and password inputs on the landing page. Also included option to create account for new users.
+- [X] **DB data placeholder** - Represented database-backed content on the Cookbook page using a table of previously logged bakes labeled as data loaded from the database.
+- [X] **WebSocket placeholder** - Included a live updates section on the feed page showing placeholder real-time messages that will eventually be sent via WebSocket.
 
 ## 🚀 CSS deliverable
 
