@@ -31,3 +31,30 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+section, article {
+  background: #985b89;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  background-color: #03fdf9a5;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
