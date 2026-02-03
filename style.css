@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ff00d94b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #03fdf9a5;
+  color: #000000;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
