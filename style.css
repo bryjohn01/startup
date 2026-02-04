@@ -34,10 +34,6 @@ main {
   gap: 1rem;
 }
 
-main section {
-  margin-bottom: 0;
-}
-
 @media (max-width: 768px) {
   .app-layout {
     grid-template-columns: 1fr;
@@ -51,7 +47,7 @@ main section {
 
 section, article {
   background: #985b89;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   color: #ffffff;
 }
@@ -83,7 +79,7 @@ button {
 
 .app-layout {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 200px 2fr;
   min-height: 100vh;
 }
 
@@ -132,4 +128,8 @@ footer {
   margin-top: auto;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+main.home section {
+  margin-bottom: 1.5rem;
 }
