@@ -92,12 +92,18 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Visually appealing colors and layout. No overflowing elements.** - I did not complete this part of the deliverable.
-- [ ] **Use of a CSS framework** - I did not complete this part of the deliverable.
-- [ ] **All visual elements styled using CSS** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing using flexbox and/or grid display** - I did not complete this part of the deliverable.
-- [ ] **Use of a imported font** - I did not complete this part of the deliverable.
-- [ ] **Use of different types of selectors including element, class, ID, and pseudo selectors** - I did not complete this part of the deliverable.
+- [x] **Visually appealing colors and layout. No overflowing elements.**  
+  Applied a consistent color palette across the application, including the header, sidebar, buttons, and content sections. Added padding, spacing, and border radius to create a clean layout with no overflowing or overlapping elements.
+- [x] **Use of a CSS framework**  
+  Integrated the Bootstrap CSS framework using a CDN and combined it with custom CSS to support layout structure and styling.
+- [x] **All visual elements styled using CSS**  
+  Styled all visible elements using CSS, including the body, header, sidebar navigation, main content sections, forms, buttons, images, and footer. No elements rely solely on default browser styling.
+- [x] **Responsive to window resizing using flexbox and/or grid display**  
+  Used CSS Grid for the overall application layout and Flexbox for internal layout such as the sidebar and content stack. Added media queries to adjust the layout for smaller screen sizes.
+- [x] **Use of a imported font**  
+  Imported custom Google Fonts (Quicksand for headings and Montserrat for body text) and applied them using CSS
+- [x] **Use of different types of selectors including element, class, ID, and pseudo selectors**  
+  Used a variety of CSS selectors including element selectors (`body`, `header`), class selectors (`.sidebar`, `.app-layout`), and pseudo selectors (`:hover`) to control styling and interactions.
 
 ## 🚀 React part 1: Routing deliverable
 
