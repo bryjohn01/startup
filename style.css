@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #ff00d94b;
 }
 
@@ -13,6 +13,18 @@ header {
   padding: 1rem;
   background-color: #03fdf9a5;
   color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-weight: 500;
 }
 
 main {
@@ -121,4 +133,3 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
-
