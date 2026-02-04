@@ -32,6 +32,14 @@ main {
   main {
     grid-template-columns: repeat(2, 1fr);
   }
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 section, article {
@@ -60,4 +68,31 @@ button {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #985b89;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+main.home{
+  display: block;
 }
