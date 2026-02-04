@@ -96,3 +96,8 @@ button {
 main.home{
   display: block;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
