@@ -79,8 +79,8 @@ button {
 
 .app-layout {
   display: grid;
-  grid-template-columns: 200px 2fr;
-  min-height: 100vh;
+  grid-template-columns: 160px 1fr;
+  min-height: calc(100vh - 80px);
 }
 
 .sidebar {
@@ -132,4 +132,12 @@ footer {
 
 main.home section {
   margin-bottom: 1.5rem;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #03fdf9a5;
 }
