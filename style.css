@@ -15,12 +15,6 @@ header {
   color: #000000;
 }
 
-nav a {
-  margin-left: 1rem;
-  color: #000000;
-  text-decoration: none;
-}
-
 main {
   padding: 1rem;
   display: grid;
@@ -29,13 +23,10 @@ main {
 }
 
 main section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 768px) {
   .app-layout {
     grid-template-columns: 1fr;
   }
@@ -64,6 +55,10 @@ form select {
   
   padding: 0.5rem;
   margin-bottom: 0.75rem;
+}
+
+form {
+  max-width: 400px;
 }
 
 button {
@@ -97,21 +92,19 @@ button {
 
 .sidebar li {
   width: 100%;
-  color: #ffffff;
-}
-
-li a {
-  color: #ffffff
 }
 
 .sidebar a {
   display: block;
   padding: 0.5rem;
   text-align: left;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .sidebar a:hover {
-  text-decoration: underline;
+  background-color: #03fdf9a5;
+  border-radius: 4px;
 }
 
 main.home{
