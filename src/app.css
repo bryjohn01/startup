@@ -1,0 +1,147 @@
+:root {
+  --accent: #44b6c8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ff00d94b;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--accent);
+  color: #000000;
+}
+
+h1, h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+section, article {
+  background: #985b89;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+form input,
+form textarea,
+form select {
+  
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+form {
+  max-width: 400px;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  min-height: calc(100vh - 80px);
+}
+
+.sidebar {
+  background-color: #985b89;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.5rem;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: var(--accent);
+  border-radius: 4px;
+}
+
+main.home{
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+main.home section {
+  margin-bottom: 1.5rem;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent);
+}
