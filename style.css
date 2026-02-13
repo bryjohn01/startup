@@ -1,3 +1,7 @@
+:root {
+  --accent: #44b6c8;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -11,7 +15,7 @@ header {
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  background-color: #03fdf9a5;
+  background-color: var(--accent);
   color: #000000;
 }
 
@@ -70,7 +74,7 @@ form {
 }
 
 button {
-  background-color: #03fdf9a5;
+  background-color: var(--accent);
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -111,7 +115,7 @@ button {
 }
 
 .sidebar a:hover {
-  background-color: #03fdf9a5;
+  background-color: var(--accent);
   border-radius: 4px;
 }
 
@@ -139,5 +143,5 @@ main.home section {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: #03fdf9a5;
+  background-color: var(--accent);
 }
