@@ -41,8 +41,8 @@ export default function App() {
                     <Routes>
                         <Route path='/' element={<Login />} />
                         <Route path='/feed' element={<Feed />} />
-                        <Route path='/add_recipe' element={<Cookbook />} />
-                        <Route path='/cookbook' element={<Add_Recipe />} />
+                        <Route path='/add_recipe' element={<Add_Recipe />} />
+                        <Route path='/cookbook' element={<Cookbook />} />
                         <Route path='*' element={<NotFound />} />
                     </Routes>
 
