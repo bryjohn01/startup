@@ -109,9 +109,14 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Bundled using Vite** - I did not complete this part of the deliverable.
-- [ ] **Components** - I did not complete this part of the deliverable.
-- [ ] **Router** - I did not complete this part of the deliverable.
+- [x] **Bundled using Vite**  
+  I initialized my project with NPM and configured Vite with the proper `dev`, `build`, and `preview` scripts. I successfully ran the app locally using `npm run dev` and created a production build using `npm run build`.
+
+- [x] **Components**  
+  I converted my application into modular React function components. I created separate view components for each main page of my app (Login, Feed, Add Recipe, Cookbook). I moved shared styling into `app.css` and organized component files into their own folders under `src/`.
+
+- [x] **Router**  
+  I implemented client-side routing using `react-router-dom`. I used `BrowserRouter`, `Routes`, and `Route` to switch between views without reloading the page. I added navigation using `NavLink` so users can move between pages in the single-page application.
 
 ## 🚀 React part 2: Reactivity deliverable
 
