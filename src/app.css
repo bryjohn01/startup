@@ -2,7 +2,7 @@
   --accent: #44b6c8;
 }
 
-body {
+.body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #ff00d94b;
