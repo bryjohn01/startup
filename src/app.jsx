@@ -11,7 +11,7 @@ import { Add_Recipe } from './add_recipe/add_recipe';
 export default function App() {
   return (
     <BrowserRouter>
-        <div  className="body bg-dark text-light"><header  className="top-header">
+        <div  className="body"><header  className="top-header">
             <h1>BakeOff Board</h1>
             </header>
 
